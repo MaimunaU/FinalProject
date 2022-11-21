@@ -1,0 +1,353 @@
+/*CSS by Maimuna starting from here*/
+@media screen and (max-width: 850px)
+{
+    .grid
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 10px;
+    } 
+
+    .grid p 
+    {
+        font-size: 24px;
+        text-align:center;
+        padding: 10px;
+    }
+
+    h2
+    {
+        font-size: 40px;
+    }
+
+    #topQueen
+    {
+        content:url(/snakeImages/Queen1.jpg);
+    }
+
+    #bottomQueen
+    {
+        content:url(/snakeImages/Queen2.jpg);
+    }
+
+    #topHognose
+    {
+        content:url(/snakeImages/Hognose1.jpg);
+    }
+
+    #bottomHognose
+    {
+        content:url(/snakeImages/Hognose2.jpg);
+    }
+
+    #topMud
+    {
+        content:url(/turtleImages/Mud1.jpg);
+    }
+
+    #bottomMud
+    {
+        content:url(/turtleImages/Mud2.jpg);
+    }
+
+    #topHawksbill
+    {
+        content:url(/turtleImages/Hawksbill1.jpg);
+    }
+
+    #bottomHawksbill
+    {
+        content:url(/turtleImages/Hawksbill2.jpg);
+    }
+
+    #topLeatherback
+    {
+        content:url(/turtleImages/Leatherback1.jpg);
+    }
+
+    #bottomLeatherback
+    {
+        content:url(/turtleImages/Leatherback3.jpg);
+    }
+}
+
+@media screen and (min-width: 851px)
+{
+    .grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px;
+    }
+
+    .grid p 
+    {
+        font-size: 18px;
+        text-align:center;
+        padding: 10px;
+    }
+
+    #topQueen
+    {
+        content:url(/snakeImages/Queen2.jpg);
+    }
+
+    #bottomQueen
+    {
+        content:url(/snakeImages/Queen1.jpg);
+    }
+
+    #topHognose
+    {
+        content:url(/snakeImages/Hognose2.jpg);
+    }
+
+    #bottomHognose
+    {
+        content:url(/snakeImages/Hognose1.jpg);
+    }
+
+    #topMud
+    {
+        content:url(/turtleImages/Mud2.jpg);
+    }
+
+    #bottomMud
+    {
+        content:url(/turtleImages/Mud1.jpg);
+    }
+
+    #topHawksbill
+    {
+        content:url(/turtleImages/Hawksbill2.jpg);
+    }
+
+    #bottomHawksbill
+    {
+        content:url(/turtleImages/Hawksbill1.jpg);
+    }
+
+    #topLeatherback
+    {
+        content:url(/turtleImages/Leatherback3.jpg);
+    }
+
+    #bottomLeatherback
+    {
+        content:url(/turtleImages/Leatherback1.jpg);
+    }
+}
+
+ul  
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10px;
+    margin: -10px;
+}
+
+ul a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+.home
+{
+    background-color: #f4e6ce;
+}
+
+h1 
+{
+    text-align: center;
+}
+
+#intro
+{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.gallery
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.gallery img
+{
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+form
+{
+    margin-bottom: 30px;
+}
+
+.snakes
+{
+    background-color: #bcc57e;
+}
+
+.turtles
+{
+    background-color: #a3cf89;
+}
+
+.subheading
+{
+    text-align: center;
+} 
+
+.opening, .closing
+{
+    font-size: 22px;
+    margin: 10px;
+}
+
+.grid img
+{
+    width: 100%;
+    height: 100%;
+}
+
+tr:nth-child(even)
+{
+    background-color: lightgray;
+}
+
+tr:nth-child(odd)
+{
+    background-color: white;
+}
+
+th
+{
+    background-color: #38775a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+td
+{
+    padding: 10px;
+}
+
+footer
+{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin: -20px;
+}
+
+footer p
+{
+    font-size: 20px;
+}
+
+footer a 
+{
+    color: white; 
+}
+
+/*CSS by Ivy starting from here*/
+.pandas
+{
+    background-color: #fcefe9;
+}
+
+.whales
+{
+    background-color: #e3e3e4;
+}
+
+
+@media screen and (max-width: 768px) /* mobile size */
+{
+    .container
+    {
+        display:flex;
+        flex-direction:column;
+        grid-gap: 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) /* laptop size */
+{
+    .container
+    {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 'a a b' 'a a c' 'd f g';
+        grid-gap: 5px;
+    }
+
+    #first /* first image will be bigger than the rest*/
+    {
+        width: 940px;
+        height: 600px;
+        grid-area: a;
+    } 
+}
+
+h2
+{
+    margin-left: 25px;
+    text-align: left;
+}
+
+.gridalt
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 25px;
+    width:100%
+}
+
+img
+{
+    max-width: 90%;
+    height: auto;
+}
+
+.polaroid 
+{
+    width: 92%;
+    background-color: #E1F6FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-left: 25px;
+}
+
+.polaroidAlt
+{
+    width: 92%;
+    background-color: #d6fed7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-left: 25px;
+}
+
+p
+{
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+body
+{
+    overflow-x: hidden;
+}
