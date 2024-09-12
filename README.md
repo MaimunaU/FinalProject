@@ -1,4 +1,4 @@
-# project2
+# Final Project
 
 Final project for Web Development
 
